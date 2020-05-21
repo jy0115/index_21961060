@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Nova+Round&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Noto+Sans+KR:wght@300;400;700&family=Nova+Round&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
     body {
-      background-image:url("img/back.jpg");
+      background-image:url("img/back_4.jpg");
     }
     nav {
       width: 100%;
@@ -68,7 +68,6 @@
     #sub-menu > li {
       padding: 14px 65px;
       border-bottom: 1px solid rgba(0,0,0,0.15);
-      list-style: none;
     }
 
     #sub-menu > li >  a {
@@ -88,52 +87,62 @@
     main {
       width:1800px;
       height:800px;
+      padding:20px;
     }
     section {
-      width:700px;
-      height:500px;
+      width:600px;
+      height:340px;
       /*border: solid 1px red;*/
-      margin:30px;
-      margin-top: 170px;
-      margin-right: 150px;
-      float: left;
-      text-align: left;
-    }
-    #pic {
-      width: 400px;
-      height: 500px;
-      float: right;
+      float: center;
+      text-align: center;
     }
     h2 {
       margin: auto;
       margin-bottom: 20px;
-      border-bottom:solid 2px white;
-      /*font-family: 'Nova Round', cursive;*/
-      font-family: 'Roboto', sans-serif;
-    }
-    p {
-      margin: 10px;
-      font-family: 'Roboto', sans-serif;
-      color : white;
-      font-size: 22px;
-    }
-    h3 {
-      margin: auto;
-      font-family: 'Roboto', sans-serif;
-      /*font-family: 'Nova Round', cursive;*/
-      color : white;
-      font-size: 40px;
+      border-bottom:solid 2px orange;
+      text-align: left;
     }
     h4 {
       margin: auto;
       margin-top: 5px;
     }
+    h5 {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      font-size:25px;
+      color:orange;
+      border-bottom:solid 1.5px orange;
+    }
+    p {
+      margin: auto;
+      margin-top: 5px;
+    }
+    #pic img {
+      height:300px;
+      width: 300px;
+      /*border: solid 1px red;*/
+      margin-bottom:20px;
+    }
+    #title {
+      width:500px;
+      height:50px;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    #insta img{
+      height:100px;
+      width: 100px;
+      /*border: solid 1px red;*/
+      margin-bottom:20px;
+      float: center;
+    }
     footer {
       width:100%;
       height:120px;
       clear:both;
-      background-color:#ffffff;
+      background-color:orange;
     }
+
     </style>
   </head>
   <body>
@@ -143,12 +152,12 @@
       <a href="index.html"><img src="img/logo.png"></a>
     </div>
     <ul id="main-menu">
-      <li><a href='contact.html'>Contact</a></li>
+      <li><a href='contact.html'style="color:orange;">Contact</a></li>
       <li><a href='works.html'>Works</a>
         <ul id="sub-menu">
-        <li><a href="planning.html" aria-label="subemnu">Planning</a></li>
-        <li><a href="design.html" aria-label="subemnu">Design</a></li>
-        <li><a href="drawing.html" aria-label="subemnu">Drawing</a></li>
+          <li><a href="planning.html" aria-label="subemnu">Planning</a></li>
+          <li><a href="design.html" aria-label="subemnu">Design</a></li>
+          <li><a href="drawing.html" aria-label="subemnu">Drawing</a></li>
       </ul></li>
       <li><a href='about_me.html'>About me</a></li>
     </ul>
@@ -156,25 +165,31 @@
   </header>
   <center>
   <main>
-    <section>
-      <h3>Jiyeon's</h3>
-      <h2 style="font-size:90px; color:white;">Portfol!o.</h2>
-      <ul>
-        <li><p>Date . 2019 ~ 2020</p></li>
-        <li><p>School . Kaywon University Art & Design</p></li>
-        <li><p>Major . Digital Media Design</p></li>
-      </ul>
-    </section>
+    <h2 style="font-size:50px; color:orange;">&nbsp;Contact.</h2>
     <section>
       <div id="pic">
-        <img src="img/me.png" onmouseover="this.src='./img/me2.png'" onmouseout="this.src='./img/me.png'">
+        <img src="img/me3.png">
+      </div>
+    </section>
+    <section>
+      <div id="title">
+      <h5>· Contact</h5>
+      </div>
+      <p style="font-size:18px;color:gray;">Call . 010 - 4652 - 6762</p>
+      <p style="font-size:18px;color:gray;">Email . haw0115@gmail.com</p><br>
+      <div id="title">
+      <h5>· SNS Contact</h5>
+      </div>
+      <div id="insta">
+        <a href="https://instagram.com/s.ji_yeon01?igshid=obtne9rbinmw" target="_blank"><img src="img/insta.png" onmouseover="this.src='./img/instaon.png'" onmouseout="this.src='./img/insta.png'"></a> &nbsp;&nbsp;
+        <a href="https://www.facebook.com/profile.php?id=100003290120774" target="_blank"><img src="img/facebook.png" onmouseover="this.src='./img/facebookon.png'" onmouseout="this.src='./img/facebook.png'">
       </div>
     </section>
   </main>
   </center>
   <footer>
     <div id="logo2">
-      <a href="index.html"><img src="img/logo2.png"></a>
+      <a href="index.html"><img src="img/logo.png"></a>
     </div>
   </footer>
   </body>

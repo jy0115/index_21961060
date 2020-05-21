@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Nova+Round&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Noto+Sans+KR:wght@300;400;700&family=Nova+Round&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
     body {
-      background-image:url("img/back.jpg");
+      background-image:url("img/back_3.jpg");
     }
     nav {
       width: 100%;
@@ -68,7 +68,6 @@
     #sub-menu > li {
       padding: 14px 65px;
       border-bottom: 1px solid rgba(0,0,0,0.15);
-      list-style: none;
     }
 
     #sub-menu > li >  a {
@@ -87,52 +86,74 @@
     }
     main {
       width:1800px;
-      height:800px;
+      height:700px;
+      padding:20px;
     }
     section {
-      width:700px;
-      height:500px;
+      width:540px;
+      height:600px;
       /*border: solid 1px red;*/
-      margin:30px;
-      margin-top: 170px;
-      margin-right: 150px;
       float: left;
       text-align: left;
-    }
-    #pic {
-      width: 400px;
-      height: 500px;
-      float: right;
+      margin-right:10px;
+      padding-left: 40px;
     }
     h2 {
       margin: auto;
       margin-bottom: 20px;
-      border-bottom:solid 2px white;
-      /*font-family: 'Nova Round', cursive;*/
-      font-family: 'Roboto', sans-serif;
-    }
-    p {
-      margin: 10px;
-      font-family: 'Roboto', sans-serif;
-      color : white;
-      font-size: 22px;
-    }
-    h3 {
-      margin: auto;
-      font-family: 'Roboto', sans-serif;
-      /*font-family: 'Nova Round', cursive;*/
-      color : white;
-      font-size: 40px;
+      border-bottom:solid 2px orange;
     }
     h4 {
       margin: auto;
       margin-top: 5px;
     }
+    h5 {
+      font-family: 'Roboto', sans-serif;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      font-size:25px;
+      color:#f7931e;
+      text-align: left;
+      border-bottom:solid 1.5px orange;
+      width:150px;
+    }
+    p {
+      margin: auto;
+      margin-top: 5px;
+    }
+    #title {
+      width:400px;
+      height:50px;
+      margin-bottom: 10px;
+    }
+    #skill img{
+      height:120px;
+      width: 400px;
+      /*border: solid 1px red;*/
+      margin-bottom:20px;
+      float: left;
+    }
+    #skill {
+      height:140px;
+      width: 500px;
+      /*border: solid 1px red;*/
+      margin-bottom:4px;
+      float: left;
+    }
+    table, th, tr, td {
+      color: gray;
+      border-collapse: collapse;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    table {
+      margin-bottom: 30px;
+    }
     footer {
       width:100%;
       height:120px;
       clear:both;
-      background-color:#ffffff;
+      background-color:orange;
     }
     </style>
   </head>
@@ -144,11 +165,11 @@
     </div>
     <ul id="main-menu">
       <li><a href='contact.html'>Contact</a></li>
-      <li><a href='works.html'>Works</a>
+      <li><a href='works.html'style="color:orange;">Works</a>
         <ul id="sub-menu">
-        <li><a href="planning.html" aria-label="subemnu">Planning</a></li>
-        <li><a href="design.html" aria-label="subemnu">Design</a></li>
-        <li><a href="drawing.html" aria-label="subemnu">Drawing</a></li>
+          <li><a href="planning.html" aria-label="subemnu">Planning</a></li>
+          <li><a href="design.html" aria-label="subemnu">Design</a></li>
+          <li><a href="drawing.html" aria-label="subemnu">Drawing</a></li>
       </ul></li>
       <li><a href='about_me.html'>About me</a></li>
     </ul>
@@ -156,25 +177,30 @@
   </header>
   <center>
   <main>
+    <h2 style="font-size:50px; color:orange; text-align:left;">&nbsp;Works.</h2>
     <section>
-      <h3>Jiyeon's</h3>
-      <h2 style="font-size:90px; color:white;">Portfol!o.</h2>
-      <ul>
-        <li><p>Date . 2019 ~ 2020</p></li>
-        <li><p>School . Kaywon University Art & Design</p></li>
-        <li><p>Major . Digital Media Design</p></li>
-      </ul>
+      <div id="title">
+      <h5>· Planning</h5>
+      </div>
+      <a href="planning.html"><img src="img/plan.png" onmouseover="this.src='./img/planon.png'" onmouseout="this.src='./img/plan.png'"></a>
     </section>
     <section>
-      <div id="pic">
-        <img src="img/me.png" onmouseover="this.src='./img/me2.png'" onmouseout="this.src='./img/me.png'">
+      <div id="title">
+      <h5>· Design</h5>
       </div>
+      <a href="design.html"><img src="img/design.png" onmouseover="this.src='./img/designon.png'" onmouseout="this.src='./img/design.png'"></a>
+    </section>
+    <section>
+      <div id="title">
+      <h5>· Drawing</h5>
+      </div>
+      <a href="drawing.html"><img src="img/drawing.png" onmouseover="this.src='./img/drawingon.png'" onmouseout="this.src='./img/drawing.png'"></a>
     </section>
   </main>
   </center>
   <footer>
     <div id="logo2">
-      <a href="index.html"><img src="img/logo2.png"></a>
+      <a href="index.html"><img src="img/logo.png"></a>
     </div>
   </footer>
   </body>
